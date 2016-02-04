@@ -1,0 +1,25 @@
+@base: #fff;
+@fontColor: lightgreen;
+@fontSize: 14px;
+@activeBg: lightgreen;
+@activeColor: #fff;
+
+.header-navs {
+	list-style: none;
+	display: flex;
+	li {
+		flex: 1; 
+		a {
+			display: inline-block;
+			text-decoration: none;
+			width: 100%;
+			line-height: 30px;
+			text-align: center;
+		}
+		cursor: pointer;
+	}
+	li.selected {
+		background-color: @activeBg;
+		color: @activeColor;
+	}
+}

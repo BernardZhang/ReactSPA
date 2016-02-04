@@ -1,0 +1,26 @@
+@base: #fff;
+@fontColor: lightgreen;
+@fontSize: 14px;
+@activeBg: lightgreen;
+@activeColor: #fff;
+
+body {
+	background-color: @base;
+}
+
+.app-container {
+	color: @fontColor;
+	font-size: @fontSize;
+}
+
+.header-navs {
+	list-style: none;
+	display: flex;
+	li {
+		flex: 1; 
+	}
+	li.selected {
+		background-color: @activeBg;
+		color: @activeColor;
+	}
+}
